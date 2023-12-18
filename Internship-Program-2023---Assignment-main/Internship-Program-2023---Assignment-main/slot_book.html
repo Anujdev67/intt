@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <!--User login form validation-->
+    <script type="text/javascript" src="slot_book.js"></script>
+    <title>Yoga Classes - slot booking</title>
+</head>
+
+<body>
+    <!-- Navigation bar(header) -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home.html">
+                    <img src="https://th.bing.com/th/id/OIP.F8ba9CLIMTfLohhbndz7kQHaFi?w=234&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" width="60" height="30" alt="logo">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                        </path>
+                    </svg>
+                    <a class="navbar-brand" href="#">Yoga Classes</a>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Login form -->
+    <section class="container-fluid">
+        <br />
+        <h3 class="text-center font-weight-bold">Admission for Yoga Classes</h3>
+        <!-- row and justify-content-center class is used to place the form in center -->
+        <section class="row justify-content-center">
+            <section class="col-12 col-sm-6 col-md-4">
+                <form class="form-container" name="slot_book" method="post" action="" onsubmit="return CompletePayment()">
+                    <div class="form-group">
+                        <h5 class="text-center font-weight-bold">Book slot</h5>
+                        <label for="InputEmail1">Email Address<span style="color: red;"> *</span></label>
+                        <input type="email" class="form-control" id="InputEmail1" name="InputEmail" aria-describeby="emailHelp" placeholder="Enter email" required/>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobileno">Mobile Number<span style="color: red;"> *</span></label>
+                        <input type="number" class="form-control" id="mobileno" placeholder="+91"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age<span style="color: red;"> *</span></label>
+                        <input type="number" class="form-control" id="age" placeholder="age"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="slot">Slot book<span style="color: red;"> *</span></label>
+                        <select name="slot_book" id="slot">
+                            <option value=""> Select one slot </option>
+                            <option value="6-7 AM">6-7 AM</option>
+                            <option value="7-8 AM">7-8 AM</option>
+                            <option value="8-9 AM">8-9 AM</option>
+                            <option value="5-6 PM">5-6 PM</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enroll yoga class</button> &nbsp;&nbsp;
+                    <button type="reset" class="btn btn-primary">Cancel</button>
+                </form>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>

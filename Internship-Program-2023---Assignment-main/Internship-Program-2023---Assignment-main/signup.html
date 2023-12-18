@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <title>Yoga Classes - User signup</title>
+</head>
+
+<body>
+    <!-- Navigation bar(header) -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="home.html">
+                    <img src="https://th.bing.com/th/id/OIP.F8ba9CLIMTfLohhbndz7kQHaFi?w=234&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7" width="60" height="30" alt="logo">
+                </a>
+                <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="bdNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <svg width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z">
+                        </path>
+                    </svg>
+                    <a class="navbar-brand" href="#">Yoga Classes</a>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br/>
+    <h4 class="text-center font-weight-bold">Admission for Yoga Classes</h4>
+    <!-- Signup form -->
+    <section class="container-fluid"> 
+        <!-- row and justify-content-center class is used to place the form in center -->
+        <section class="row justify-content-center">
+            <img src="https://happymothersdayquote.com/wp-content/uploads/2018/06/Inspirational-Peace-of-Mind-Yoga-Quotes.jpg" class="rounded" alt="image" width="370" height="440" />
+            <section class="col-12 col-sm-6 col-md-4">
+                <form class="form-container" name="signupform" method="post" onsubmit="return validate()">
+                    <div class="form-group">
+                        <h4 class="text-center font-weight-bold">Signup</h4>
+                        <div class="form-group">
+                            <label for="InputEmail1">Email Address<span style="color: red;"> *</span></label>
+                            <input type="email" class="form-control" id="InputEmail1" aria-describeby="emailHelp" placeholder="Enter email" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobileno">Mobile Number<span style="color: red;"> *</span></label>
+                            <input type="number" class="form-control" id="mobileno" placeholder="+91" required/>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password<span style="color: red;"> *</span></label>
+                            <input type="password" class="form-control" id="password" placeholder="Password" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Confirm Password<span style="color: red;"> *</span></label>
+                            <input type="password" class="form-control" id="cpassword" placeholder="Confirm Password" required/>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">SignUp</button> &nbsp;&nbsp;
+                    <button type="reset" class="btn btn-primary">Reset</button>
+                    <div class="form-footer">
+                        <p>Already have an account? <a href="login.html">Login</a></p>
+                    </div>
+                </form>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
